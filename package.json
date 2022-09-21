@@ -1,0 +1,23 @@
+{
+  "name": "url_shortening",
+  "version": "0.0.1",
+  "description": "XXX",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "NODE_ENV=DEV npx ts-node index.ts",
+    "start": "set -a && source .env && NODE_ENV=PRODUCTION npx ts-node index.ts",
+    "start:watch": "nodemon index.ts",
+    "test": "NODE_ENV=TEST jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "jsdom": "^20.0.0",
+    "node-fetch": "^3.2.10",
+    "robotjs": "^0.6.0",
+    "selenium-webdriver": "^4.4.0"
+  },
+  "devDependencies": {}
+}
